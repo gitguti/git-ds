@@ -1,8 +1,9 @@
 import styles from './button.module.scss'
+
 type ButtonProps = Readonly<{
-    children: string
+    children?: React.ReactNode
 }>;
 
 export const Button = (props: ButtonProps) => {
-    <button className={styles.button}>{props.children}</button>
+    return(<button className={styles.button}>{props.children}</button>)
 }

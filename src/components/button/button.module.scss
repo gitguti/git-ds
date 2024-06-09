@@ -1,4 +1,54 @@
+@import '../../styles/main';
+
+// Estilos generales para los botones
 .button {
-    background-color: blue;
-    color: #fff
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  &.primary {
+    &.filled {
+      background-color: $blue-500;
+      color: #fff;
+    }
+    &.outlined {
+      background-color: transparent;
+      color: $blue-500;
+      border: 2px solid $blue-500;
+    }
+  }
+
+  &.secondary {
+    &.filled {
+      background-color: $blue-200;
+      color: #fff;
+    }
+    &.outlined {
+      background-color: transparent;
+      color: $blue-200;
+      border: 2px solid $blue-200;
+    }
+  }
+
+  &.small {
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-sm;
+
+  }
+
+  &.medium {
+    padding: $spacing-md $spacing-lg;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-base;
+  }
+
+  &.large {
+    padding: $spacing-lg $spacing-md;
+    border-radius: $border-radius-md;
+    font-size: $font-size-lg;
+  }
 }

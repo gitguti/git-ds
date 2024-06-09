@@ -1,8 +1,12 @@
 {
-  "name": "git-ds",
-  "private": true,
+  "name": "@gitguti/git-ds",
   "version": "0.0.1",
   "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -44,5 +48,11 @@
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.1",
     "vite-plugin-lib-inject-css": "^2.1.1"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^3.0.1",
+    "@storybook/addon-docs": "^8.1.6",
+    "@storybook/builder-vite": "^8.1.6",
+    "classnames": "^2.5.1"
   }
 }

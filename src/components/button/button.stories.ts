@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './button';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta = {
+const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
   parameters: {
@@ -10,22 +9,38 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
+    variant: {
+      control: {
+        type: 'radio',
+        options: ['primary', 'secondary'],
+      },
+    },
+    styleType: {
+      control: {
+        type: 'radio',
+        options: ['filled', 'outlined'],
+      },
+    },
   },
-  args: {},
-} satisfies Meta<typeof Button>;
+  args: {
+    variant: 'primary',
+    styleType: 'filled',
+  },
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    children: "Primary button",
+    children: 'Primary Button',
+    variant: 'primary',
   },
 };
 
 export const Secondary: Story = {
   args: {
     children: 'Secondary Button',
+    variant: 'secondary',
   },
 };

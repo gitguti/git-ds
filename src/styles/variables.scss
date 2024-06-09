@@ -1,0 +1,113 @@
+:root {
+    font-size: 16px; // 1rem = 16px
+}
+
+// Colores Primitivos
+$blue-50: #e8e9f0;
+$blue-100: #b8bacf;
+$blue-200: #9698b8;
+$blue-300: #666998;
+$blue-400: #484c84;
+$blue-500: #1a1f65;
+$blue-600: #181c5c;
+$blue-700: #121648;
+$blue-800: #0e1138;
+$blue-900: #0b0d2a;
+
+$green-50: #ebfcf4;
+$green-100: #c2f6db;
+$green-200: #a5f2ca;
+$green-300: #7cecb2;
+$green-400: #62e8a3;
+$green-500: #3be28c;
+$green-600: #36ce7f;
+$green-700: #2aa063;
+$green-800: #207c4d;
+$green-900: #195f3b;
+
+$yellow-50: #fffae9;
+$yellow-100: #fff0bb;
+$yellow-200: #ffe99a;
+$yellow-300: #ffdf6c;
+$yellow-400: #ffd950;
+$yellow-500: #ffcf24;
+$yellow-600: #e8bc21;
+$yellow-700: #b5931a;
+$yellow-800: #8c7214;
+$yellow-900: #6b570f;
+
+$red-50: #fdeeef;
+$red-100: #f8cace;
+$red-200: #f5b0b6;
+$red-300: #f08c95;
+$red-400: #ed7681;
+$red-500: #e95461;
+$red-600: #d44c58;
+$red-700: #a53c45;
+$red-800: #802e35;
+$red-900: #622329;
+
+$gray-50: #F7FAFC;
+$gray-100: #EDF2F7;
+$gray-200: #E2E8F0;
+$gray-300: #CBD5E0;
+$gray-400: #A0AEC0;
+$gray-500: #718096;
+$gray-600: #4A5568;
+$gray-700: #2D3748;
+$gray-800: #1A202C;
+$gray-900: #171923;
+
+// Temas
+$light-theme: (
+  primary: $blue-500,
+  success: $green-500,
+  warning: $yellow-500,
+  danger: $red-500,
+  neutral: $gray-500,
+  background: $gray-50,
+  text: $gray-900
+);
+
+$dark-theme: (
+  primary: $blue-400,
+  success: $green-400,
+  warning: $yellow-400,
+  danger: $red-400,
+  neutral: $gray-400,
+  background: $gray-900,
+  text: $gray-50
+);
+
+// Espaciado
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 40px;
+
+// Tipografía
+$font-size-sm: 0.875rem; // 14px
+$font-size-base: 1rem;      // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.5rem;  // 24px
+
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Arial', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 700;
+
+$line-height-tight: 1.2;
+$line-height-normal: 1.5;
+$line-height-loose: 1.8;
+
+// Border Radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-full: 9999px; // Para elementos completamente redondeados, como círculos
